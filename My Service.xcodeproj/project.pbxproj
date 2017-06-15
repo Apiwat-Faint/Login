@@ -12,6 +12,14 @@
 		375F2CB01EF25CF9000F95E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CAE1EF25CF9000F95E3 /* Main.storyboard */; };
 		375F2CB21EF25CF9000F95E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CB11EF25CF9000F95E3 /* Assets.xcassets */; };
 		375F2CB51EF25CF9000F95E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CB31EF25CF9000F95E3 /* LaunchScreen.storyboard */; };
+		375F2CBD1EF27DFE000F95E3 /* AddNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F2CBC1EF27DFE000F95E3 /* AddNewUserViewController.swift */; };
+		375F2CBF1EF281EB000F95E3 /* snru1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CBE1EF281EB000F95E3 /* snru1.jpg */; };
+		375F2CC31EF28586000F95E3 /* ic_note_add_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CC01EF28586000F95E3 /* ic_note_add_2x.png */; };
+		375F2CC41EF28586000F95E3 /* ic_note_add_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CC11EF28586000F95E3 /* ic_note_add_3x.png */; };
+		375F2CC51EF28586000F95E3 /* ic_note_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CC21EF28586000F95E3 /* ic_note_add.png */; };
+		375F2CC91EF288B7000F95E3 /* ic_keyboard_arrow_left_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CC61EF288B7000F95E3 /* ic_keyboard_arrow_left_2x.png */; };
+		375F2CCA1EF288B7000F95E3 /* ic_keyboard_arrow_left_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CC71EF288B7000F95E3 /* ic_keyboard_arrow_left_3x.png */; };
+		375F2CCB1EF288B7000F95E3 /* ic_keyboard_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 375F2CC81EF288B7000F95E3 /* ic_keyboard_arrow_left.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		375F2CB11EF25CF9000F95E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		375F2CB41EF25CF9000F95E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375F2CB61EF25CF9000F95E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375F2CBC1EF27DFE000F95E3 /* AddNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewUserViewController.swift; sourceTree = "<group>"; };
+		375F2CBE1EF281EB000F95E3 /* snru1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snru1.jpg; path = ../../../../../Downloads/snru1.jpg; sourceTree = "<group>"; };
+		375F2CC01EF28586000F95E3 /* ic_note_add_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add_2x.png; path = ../../../../../Downloads/ic_note_add_black_24dp/ios/ic_note_add.imageset/ic_note_add_2x.png; sourceTree = "<group>"; };
+		375F2CC11EF28586000F95E3 /* ic_note_add_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add_3x.png; path = ../../../../../Downloads/ic_note_add_black_24dp/ios/ic_note_add.imageset/ic_note_add_3x.png; sourceTree = "<group>"; };
+		375F2CC21EF28586000F95E3 /* ic_note_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add.png; path = ../../../../../Downloads/ic_note_add_black_24dp/ios/ic_note_add.imageset/ic_note_add.png; sourceTree = "<group>"; };
+		375F2CC61EF288B7000F95E3 /* ic_keyboard_arrow_left_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_keyboard_arrow_left_2x.png; path = ../../../../../Downloads/ic_keyboard_arrow_left_black_24dp/ios/ic_keyboard_arrow_left.imageset/ic_keyboard_arrow_left_2x.png; sourceTree = "<group>"; };
+		375F2CC71EF288B7000F95E3 /* ic_keyboard_arrow_left_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_keyboard_arrow_left_3x.png; path = ../../../../../Downloads/ic_keyboard_arrow_left_black_24dp/ios/ic_keyboard_arrow_left.imageset/ic_keyboard_arrow_left_3x.png; sourceTree = "<group>"; };
+		375F2CC81EF288B7000F95E3 /* ic_keyboard_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_keyboard_arrow_left.png; path = ../../../../../Downloads/ic_keyboard_arrow_left_black_24dp/ios/ic_keyboard_arrow_left.imageset/ic_keyboard_arrow_left.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +70,16 @@
 		375F2CA91EF25CF9000F95E3 /* My Service */ = {
 			isa = PBXGroup;
 			children = (
+				375F2CC61EF288B7000F95E3 /* ic_keyboard_arrow_left_2x.png */,
+				375F2CC71EF288B7000F95E3 /* ic_keyboard_arrow_left_3x.png */,
+				375F2CC81EF288B7000F95E3 /* ic_keyboard_arrow_left.png */,
+				375F2CC01EF28586000F95E3 /* ic_note_add_2x.png */,
+				375F2CC11EF28586000F95E3 /* ic_note_add_3x.png */,
+				375F2CC21EF28586000F95E3 /* ic_note_add.png */,
+				375F2CBE1EF281EB000F95E3 /* snru1.jpg */,
 				375F2CAA1EF25CF9000F95E3 /* AppDelegate.swift */,
 				375F2CAC1EF25CF9000F95E3 /* ViewController.swift */,
+				375F2CBC1EF27DFE000F95E3 /* AddNewUserViewController.swift */,
 				375F2CAE1EF25CF9000F95E3 /* Main.storyboard */,
 				375F2CB11EF25CF9000F95E3 /* Assets.xcassets */,
 				375F2CB31EF25CF9000F95E3 /* LaunchScreen.storyboard */,
@@ -123,7 +147,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375F2CC51EF28586000F95E3 /* ic_note_add.png in Resources */,
+				375F2CC91EF288B7000F95E3 /* ic_keyboard_arrow_left_2x.png in Resources */,
 				375F2CB51EF25CF9000F95E3 /* LaunchScreen.storyboard in Resources */,
+				375F2CC31EF28586000F95E3 /* ic_note_add_2x.png in Resources */,
+				375F2CC41EF28586000F95E3 /* ic_note_add_3x.png in Resources */,
+				375F2CCB1EF288B7000F95E3 /* ic_keyboard_arrow_left.png in Resources */,
+				375F2CCA1EF288B7000F95E3 /* ic_keyboard_arrow_left_3x.png in Resources */,
+				375F2CBF1EF281EB000F95E3 /* snru1.jpg in Resources */,
 				375F2CB21EF25CF9000F95E3 /* Assets.xcassets in Resources */,
 				375F2CB01EF25CF9000F95E3 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				375F2CAD1EF25CF9000F95E3 /* ViewController.swift in Sources */,
+				375F2CBD1EF27DFE000F95E3 /* AddNewUserViewController.swift in Sources */,
 				375F2CAB1EF25CF9000F95E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
