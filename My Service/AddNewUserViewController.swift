@@ -27,6 +27,7 @@ UIViewController {
     @IBOutlet weak var PasswordTextFieid: UITextField!
     
     
+    @IBOutlet weak var AlertLabel: UILabel!
     
    
     @IBAction func saveButton(_ sender: Any) {
@@ -42,8 +43,14 @@ UIViewController {
         if (intName == 0) || (intUer == 0) || (intPassword == 0) {
             
             print("Have Space")
+            AlertLabel.alpha = 1
         }else{
             print("No Space")
+            AlertLabel.alpha = 0
+            let strMyURL = "http://androidthai.in.th/snru/addUserFaint.php?isAdd=true&Name=" + nameString! + "&User=" + userString! + "&Password=" + PasswordString! + ""
+            print("strMyURL ==> \(strMyURL)")
+            uploadValueToServer(strURL: strMyURL)
+            
         }
         
     }//
@@ -59,8 +66,48 @@ UIViewController {
         
         print("This is AddNewUser")
 
-        // Do any additional setup after loading the view.
+      
+    
     } // Main Method
+    
+    
+    func uploadValueToServer(strURL: String) -> Void {
+        
+        //Process connected Http
+        let urlPHP = strURL
+        //Change String to url String
+        let myURL = URL(string: urlPHP)
+        
+        let request = NSMutableURLRequest (url: myURL!)
+        let task = URLSession.shared.dataTask(with: request as URLRequest){
+            
+            
+            data, response, error in
+            if error != nil{
+                print("Error ==>")
+            } else{
+                
+                if let unwrappedData = data {
+                    
+                    
+                    let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
+                    let strJSON = dataString as Any
+                    print("strJSON ==> \(strJSON)")
+                    
+                    
+                }
+            }// if1
+            
+            
+            
+        }
+        
+        
+        
+        task.resume()
+
+        
+    }// uploadValue
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
