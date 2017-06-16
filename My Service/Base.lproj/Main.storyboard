@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,6 +44,26 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-rS-GoP">
+                                <rect key="frame" x="139" y="126" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-ML-XBF">
+                                <rect key="frame" x="139" y="182" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2X-86-DAs">
+                                <rect key="frame" x="164" y="228" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="login"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,7 +80,7 @@
         <!--AddNewUser-->
         <scene sceneID="TYg-q1-V7u">
             <objects>
-                <viewController title="AddNewUser" id="w4I-j7-Gya" customClass="AddNewUserViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNewUserViewController" title="AddNewUser" id="w4I-j7-Gya" customClass="AddNewUserViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7BC-E7-rTT"/>
                         <viewControllerLayoutGuide type="bottom" id="d4n-d8-QYt"/>
@@ -138,6 +158,7 @@
                         <outlet property="PasswordTextFieid" destination="axZ-9W-VWE" id="tXJ-Ay-95y"/>
                         <outlet property="nameTextFieid" destination="YiN-YR-MXd" id="Fjz-n2-gsV"/>
                         <outlet property="userTextFieid" destination="WzW-9f-7Rv" id="uDi-Yd-Dsm"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackHome" id="ylk-oV-sdn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Sv-8P-31Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -150,4 +171,7 @@
         <image name="ic_note_add.png" width="24" height="24"/>
         <image name="snru1.jpg" width="1000" height="667"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ylk-oV-sdn"/>
+    </inferredMetricsTieBreakers>
 </document>
